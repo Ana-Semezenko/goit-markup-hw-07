@@ -40,6 +40,8 @@
 .features {
   padding-top: $distance;
   padding-bottom: $distance;
+
+  @extend %container;
 }
 
 .features__list {
