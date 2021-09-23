@@ -1,0 +1,39 @@
+.clients {
+  padding-top: $distance;
+  padding-bottom: $distance;
+}
+.clients__list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.clients__link {
+  fill: $mainFill;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 172px;
+  height: 92px;
+
+  border: 1px solid $mainFill;
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border-color: $accentColor;
+  }
+
+  &:hover .clients__icons,
+  &:focus .clients__icons {
+    fill: $accentColor;
+  }
+}
+.clients__info:not(:last-child) {
+  margin-right: 30px;
+}
+.clients__icons {
+  transition: fill $transitionSpeed;
+}

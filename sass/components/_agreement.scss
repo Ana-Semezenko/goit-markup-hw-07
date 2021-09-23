@@ -1,0 +1,28 @@
+.agreement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.agreement__label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include heading($secondaryColor, 400, 14px, $textHeightMain, 00.03em);
+}
+.agreement__box {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  &:checked + .agreement__tick {
+    background-color: $accentColor;
+    background-image: url(../img/check.svg);
+    fill: $accentColor;
+    border-radius: 2px;
+  }
+}
+.agreement__tick {
+  margin-right: 7px;
+}

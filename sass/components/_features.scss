@@ -1,0 +1,43 @@
+.features {
+  padding-top: $distance;
+  padding-bottom: $distance;
+
+  @extend %container;
+}
+
+.features__list {
+  display: flex;
+}
+.features__list li + li {
+  margin-left: 30px;
+}
+.features__list .features__item {
+  width: 270px;
+}
+
+.features .feature__names {
+  margin-bottom: 10px;
+
+  @include heading($primaryColor, $textWeightMain, 14px, $textHeight, 0.03em);
+  text-transform: uppercase;
+}
+.feature__def {
+  @include heading($secondaryColor, 400, 14px, $textHeightMain, 0.03em);
+}
+
+.icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: $cardColor;
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+}
+.feature__picture {
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+}

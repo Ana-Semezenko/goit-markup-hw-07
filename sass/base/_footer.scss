@@ -42,6 +42,8 @@
 .info__address {
   display: block;
 
+  font-style: normal;
+
   @include heading($backgroundColor, 400, 14px, $textHeightMain, 00.03em);
 }
 
